@@ -35,10 +35,8 @@
   .menu-nav, .menu-branding {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
@@ -47,11 +45,14 @@
     background: rgba(50, 50, 50, 0.97);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.8s ease-out; }
+    transition: all 0.8s ease-out;
+    width: 35%; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     margin: 0;
+    align-items: center;
+    width: 65%;
     padding: 0;
     background: rgba(63, 63, 63, 0.9);
     transform: translate3d(0, 100%, 0);
@@ -66,7 +67,7 @@
       border-radius: 50%;
       border: solid 2px #eede00; }
   .menu .nav-item {
-    transform: translate3d(600px, 0, 0);
+    transform: translate3d(700px, 0, 0);
     transition: all 0.8s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
@@ -78,10 +79,12 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: palatino;
     color: #fff;
     text-decoration: none;
-    transition: all 0.8s ease-out; }
+    transition: all 0.8s ease-out;
+    margin-left: 50px; }
     .menu .nav-link:hover {
       color: #eede00; }
 
@@ -128,12 +131,14 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-family: garamond;
+    font-weight: 500; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0;
     background: rgba(68, 68, 68, 0.3); }
 
 a {
@@ -214,7 +219,7 @@ main {
       main#contact .box:hover span {
         color: #000; }
   main#contact .icons {
-    margin: 2rem auto;
+    margin: 0px auto;
     width: 200px; }
     main#contact .icons a {
       align-content: center; }
